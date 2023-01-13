@@ -56,27 +56,14 @@
             <button class="keyboard-button">Enter</button>
         </div>
     </div>
-<script>
-    document.getElementById("keyboard-cont").addEventListener("click", (e) => {
-        const target = e.target
-        
-        if (!target.classList.contains("keyboard-button")) {
-            return
-        }
-        let key = target.textContent
     
-        if (key === "Del") {
-            key = "Backspace"
-        } 
-    
-        document.dispatchEvent(new KeyboardEvent("keyup", {'key': key}))
-    })
-    console.log("key")
-</script>
-
 <! https://www.freecodecamp.org/news/build-a-wordle-clone-in-javascript/amp/
 
 --> 
 </body>
+
+<p>
+    This was used a refrence to the code https://www.freecodecamp.org/news/build-a-wordle-clone-in-javascript/amp/
+</p>
 
 </html>
