@@ -133,7 +133,7 @@ function insertLetter(pressedKey) {
   currentGuess.push(pressedKey);
   nextLetter += 1;
 }
-BELOW THIS IS THE ISSUE
+//BELOW THIS IS THE ISSUE
 const animateCSS = (element, animation, prefix = "animate__") =
   new Promise((resolve, reject) => {
     const animationName = `${prefix}${animation}`;
@@ -152,7 +152,7 @@ const animateCSS = (element, animation, prefix = "animate__") =
 
     node.addEventListener("animationend", handleAnimationEnd, { once: true });
   });
-ABOVE THIS IS THE ISSUE
+//ABOVE THIS IS THE ISSUE
 document.addEventListener("keyup", (e) => {
   if (guessesRemaining === 0) {
     return;
