@@ -1,5 +1,5 @@
 export const WORDS = [
-    'aargh',
+'aargh',
 'abaca',
 'abaci',
 'aback',
@@ -1479,10 +1479,8 @@ export const WORDS = [
 'eater',
 'eaves',
 'ebbed',
-'ebony',
 'echos',
 'eclat',
-'edema',
 'edged',
 'edger',
 'edges',
@@ -5305,7 +5303,6 @@ export const WORDS = [
 'uteri',
 'utero',
 'utter',
-'uvula',
 'vacua',
 'vacuo',
 'vague',
@@ -5699,7 +5696,6 @@ export const WORDS = [
 'zebus',
 'zeros',
 'zests',
-'zesty',
 'zetas',
 'zilch',
 'zincs',
@@ -5717,4 +5713,3 @@ export const WORDS = [
 'zooms',
 'zowie',
 ]
-  ]
