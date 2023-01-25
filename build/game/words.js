@@ -3,6 +3,7 @@ export const WORDS = [
 'abaca',
 'abaci',
 'aback',
+'biden',
 'abaft',
 'abase',
 'abash',
