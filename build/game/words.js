@@ -2611,7 +2611,6 @@ export const WORDS = [
 'kinda',
 'kinds',
 'kings',
-'kinks',
 'kiosk',
 'kirks',
 'kited',
