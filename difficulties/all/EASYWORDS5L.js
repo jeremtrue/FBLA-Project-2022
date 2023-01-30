@@ -1,4 +1,4 @@
-export const EASYWORDS = [
+export const EASYWORDS5L = [
 'steam',
 'flock',
 'shout',
