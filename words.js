@@ -3796,7 +3796,6 @@ export const WORDS = [
 'pubic',
 'pubis',
 'pucks',
-'pudgy',
 'puffs',
 'puffy',
 'puked',
