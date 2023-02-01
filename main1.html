@@ -1,107 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordle</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <meta charset="utf-8">
+    <title>
+        Wordle Clone
+    </title>
 </head>
+<body bgcolor="lightblue">
+    <h1>
+        <center>
+            FBLA Wordle
+        </center>
+    </h1>
+    <p style="color:rgb(255, 255, 255);"> 
+        <center>
+        Read instructions before playing.
+        <br>
+        <br>
+        <br>
+        <br>
 
-<body bgcolor=003366>
-   <h1>Wordle Project</h1>
-    <center>
-        <font color="white">
-            <p>
-                 Computer Game And Simulation Programming.<br>
-                 Scroll down for options.
-            </p>
-        </font>
-    </center>
-  <head>
+Instructions:
+To play: the user guesses a five letter word. <br>
+The words will change a color.<br>
+Gray if the letter is not in the word.<br>
+Yellow if the word has the letter but it is in the wrong place.<br>
+Green if the letter is right and in the right spot.<br>
+When you type the keyboard letters also change that correspond with the letters in the Boxes.<br>
 
-<script src="script.js" type="module"></script>
 
-</script>
-
-    <div id="game-board">
-
-    </div>
-
-    <div id="keyboard-cont">
-        <div class="first-row">
-            <button class="keyboard-button">q</button>
-            <button class="keyboard-button">w</button>
-            <button class="keyboard-button">e</button>
-            <button class="keyboard-button">r</button>
-            <button class="keyboard-button">t</button>
-            <button class="keyboard-button">y</button>
-            <button class="keyboard-button">u</button>
-            <button class="keyboard-button">i</button>
-            <button class="keyboard-button">o</button>
-            <button class="keyboard-button">p</button>
-        </div>
-        <div class="second-row">
-            <button class="keyboard-button">a</button>
-            <button class="keyboard-button">s</button>
-            <button class="keyboard-button">d</button>
-            <button class="keyboard-button">f</button>
-            <button class="keyboard-button">g</button>
-            <button class="keyboard-button">h</button>
-            <button class="keyboard-button">j</button>
-            <button class="keyboard-button">k</button>
-            <button class="keyboard-button">l</button>
-        </div>
-        <div class="third-row">
-            <button class="keyboard-button">Del</button>
-            <button class="keyboard-button">z</button>
-            <button class="keyboard-button">x</button>
-            <button class="keyboard-button">c</button>
-            <button class="keyboard-button">v</button>
-            <button class="keyboard-button">b</button>
-            <button class="keyboard-button">n</button>
-            <button class="keyboard-button">m</button>
-            <button class="keyboard-button">Enter</button>
-        </div>
-    </div>
-
-<style>
-
-.button1 {background-color: #df0404;}
-.button2 {background-color:rgba(0, 253, 76, 0.904)}
-</style>
-<center>
-    <a href="main1.html">
-        <button class="button1">Quit</button>
-</a>
-
-<button onClick="window.location.reload();">Reset</button>
-
-</center>
-
-<script>
-
-src="https://code.jquery.com/jquery-3.6.0.min.js"
-
-integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-
-crossorigin="anonymous"</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-<div style="position: bottom 1px; background-color: rgba(184, 115, 36, 0.744)">
-    CREDIT: <br>
-    Some Code was used to put toget this websit off of "https://www.freecodecamp.org/news/build-a-wordle-clone-in-javascript/amp/" and "https://www.w3schools.com/html/" <br>
-    We used some code from both websites to put together this website as well as our knowledge. <br>
-    Toastr and jQuery was uesed for the notification like system.<br>
-    Hope you enjoy!
-    </div>
-
+        </center>
+    </p>
 </body>
+<body>
+    <center>
+        <a href="main1.html">
+            <button>Play</button>
+        </a>
+    </center>
+
+<p>
+    Leaderboard/Scoreboard Coming Soon.
+</p>
+
+
+<div style="position: absolute; bottom: 5px;">
+    <center>
+        <a rel="noopener" href="https://www.fbla-pbl.org/" target="_blank">
+        <img src="pic/fbla logo.png" alt="FBLA Logo">
+        </a>
+    </center>
+</div>
+
 </html>
