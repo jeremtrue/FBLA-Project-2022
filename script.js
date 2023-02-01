@@ -5,19 +5,16 @@ let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
 let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)];
-// ^^^ config for game files, these change by difficulty
 
 console.log(rightGuessString);
 
 function initBoard() {
   let board = document.getElementById("game-board");
 
-  //^^assigned a var to game-baord container
-
   for (let i = 0; i < NUMBER_OF_GUESSES; i++) {
     let row = document.createElement("div");
     row.className = "letter-row";
-//^^ created rows for the gameboard
+
     for (let j = 0; j < 5; j++) {
       let box = document.createElement("div");
       box.className = "letter-box";
@@ -27,7 +24,7 @@ function initBoard() {
     board.appendChild(row);
   }
 }
-//^^ finalized game board rows.
+
 function shadeKeyBoard(letter, color) {
   for (const elem of document.getElementsByClassName("keyboard-button")) {
     if (elem.textContent === letter) {
@@ -45,7 +42,6 @@ function shadeKeyBoard(letter, color) {
     }
   }
 }
-//^^registers keyboard buttons and some colors.
 
 function deleteLetter() {
   let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
@@ -55,7 +51,7 @@ function deleteLetter() {
   currentGuess.pop();
   nextLetter -= 1;
 }
-//^^ deleting letter script
+
 function checkGuess() {
   let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
   let guessString = "";
@@ -74,7 +70,7 @@ function checkGuess() {
     toastr.error("Word not in list!");
     return;
   }
-//toastr scripts for alerting user about letter errors
+
   var letterColor = ["gray", "gray", "gray", "gray", "gray"];
 
   for (let i = 0; i < 5; i++) {
@@ -86,6 +82,7 @@ function checkGuess() {
 
   for (let i = 0; i < 5; i++) {
     if (letterColor[i] == "green") continue;
+
     for (let j = 0; j < 5; j++) {
       if (rightGuess[j] == currentGuess[i]) {
         letterColor[i] = "yellow";
@@ -93,7 +90,6 @@ function checkGuess() {
       }
     }
   }
-  //^^yellow box assign
 
   for (let i = 0; i < 5; i++) {
     let box = row.children[i];
@@ -105,14 +101,14 @@ function checkGuess() {
   }
 
   if (guessString === rightGuessString) {
-    toastr.success("You guessed right! Game over!", { timeOut: 1000 });
+    toastr.success("You guessed right! Game over!");
     guessesRemaining = 0;
     return;
   } else {
     guessesRemaining -= 1;
     currentGuess = [];
     nextLetter = 0;
-//^^ word right display toastr celebration.
+
     if (guessesRemaining === 0) {
       toastr.error("You've run out of guesses! Game over!");
       toastr.info(`The right word was: "${rightGuessString}"`);
