@@ -3717,7 +3717,6 @@ export const WORDS = [
 'porgy',
 'porks',
 'porky',
-'porno',
 'ports',
 'posed',
 'poser',
