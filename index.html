@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="style.css">
+<body background="pic/background2.png">
 <head>
     <title>
         Wordle Unleashed
@@ -8,7 +10,7 @@
 <!--setting tab title -->
 <body bgcolor="lightblue">
     <h1>
-        <center>
+        <center style="color: black;">
             Wordle Project
         </center>
     </h1>
@@ -32,13 +34,15 @@ instructgr {
 }
 </style>
 <!--css style tag-->
+<p>
 Instructions:<br>
-To play: the user guesses a five letter word, not random letters. <br>
-The words will change a color.<br>
-<instructgr>Gray if the letter is not in the word.</instructgr><br>
+Guess a five letter word, not random letters.<br>
+Press Enter and watch the colors of the letters.<br>
+<instructgr>Gray if not in the words.</instructgr><br>
 <instructy>Yellow if the word has the letter but it is in the wrong place.</instructy><br>
 <instructg>Green if the letter is right and in the right spot.</instructg><br>
-Keyboard is supported.<br>
+Keyboard and On-Screen input works!<br>
+</p>
 <!-- Instructions-->
 
         </center>
@@ -47,35 +51,32 @@ Keyboard is supported.<br>
 <body>
     <center>
         <a href="main1.html">
-            <button>Play</button>
+            <button style="color:rgb(255, 255, 255); background-color: darkgray; height: 50px; width: 120px; border-radius: 15px;">Play</button>
         </a>
     </center>
 <!--The Play Button-->
 <br>
-
-<p>
-    <center>
+<center>
+<p style="color: blueviolet;">    
         Leaderboard/Scoreboard Coming Soon.
-    </center>
 </p>
+</center>
 <!--hyperlinkFuture Learderboard/Scoreboard-->
 <br>
 
-<p style="color:blue">
+<p style="border: 5px solid; padding: 10pt; width: 320px; text-align: center; font-family: Arial, Helvetica, sans-serif; border-radius: 15px;">
     CREDIT: <br>
     Made by Jeremy Truelove and Lonnie Cowen.<br>
-    Some Code was used to put toget this websit off of "https://www.freecodecamp.org/news/build-a-wordle-clone-in-javascript/amp/" and "https://www.w3schools.com/html/" <br>
+    Some Code was used to put toget this website off of "https://www.freecodecamp.org/news/build-a-wordle-clone-in-javascript/amp/" and "https://www.w3schools.com/html/" <br>
     We used some code from both websites to put together this website as well as our knowledge. <br>
     Toastr and jQuery was uesed for the notification like system.<br>
     Hope you enjoy!
 </p>
 <!--The credits-->
 <div>
-    <center>
         <a href="https://www.fbla-pbl.org/" target="_blank">
         <img src="pic/fbla logo.png" alt="FBLA Logo">
         </a>
-    </center>
 </div>
 <!--Hyperlink To FBLA Web/adding this to hope for vercell to deploy-->
 </html>
