@@ -1,3 +1,3 @@
-export const EASYWORDS5L = [
+export const EASYWORDS3L = [
 
 ]
