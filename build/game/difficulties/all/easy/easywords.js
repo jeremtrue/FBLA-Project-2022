@@ -1,4 +1,4 @@
-export const EASYWORDS3L = [
+export const EASYWORDS = [
 'can',
 'tax',
 'wax',

@@ -1,11 +1,12 @@
-import { WORDS } from "easywords.js";
+import { EASYWORDS } from "./easywords.js";
 
-const NUMBER_OF_GUESSES = 7;
+const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
-let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)];
-
+let rightGuessString = EASYWORDS[Math.floor(Math.random() * EASYWORDS.length)];
+let LETTERCOUNT = 3;
+console.log("ITSHERE")
 console.log(rightGuessString);
 
 function initBoard() {
@@ -15,7 +16,7 @@ function initBoard() {
     let row = document.createElement("div");
     row.className = "letter-row";
 
-    for (let j = 0; j < 5; j++) {
+    for (let j = 0; j < LETTERCOUNT; j++) {
       let box = document.createElement("div");
       box.className = "letter-box";
       row.appendChild(box);
@@ -24,7 +25,7 @@ function initBoard() {
     board.appendChild(row);
   }
 }
-
+console.log("ITSHERE")
 function shadeKeyBoard(letter, color) {
   for (const elem of document.getElementsByClassName("keyboard-button")) {
     if (elem.textContent === letter) {
@@ -42,16 +43,16 @@ function shadeKeyBoard(letter, color) {
     }
   }
 }
-
+console.log("ITSHERE")
 function deleteLetter() {
-  let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
+  let row = document.getElementsByClassName("letter-row")[1 - guessesRemaining];
   let box = row.children[nextLetter - 1];
   box.textContent = "";
   box.classList.remove("filled-box");
   currentGuess.pop();
   nextLetter -= 1;
 }
-
+console.log("ITSHERE")
 function checkGuess() {
   let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
   let guessString = "";
@@ -60,38 +61,38 @@ function checkGuess() {
   for (const val of currentGuess) {
     guessString += val;
   }
-
-  if (guessString.length != 5) {
+  console.log("ITSHERE")
+  if (guessString.length != LETTERCOUNT){
     toastr.error("Not enough letters!");
     return;
   }
+  console.log("ITSHERE")
+  //if (!WORDS.includes(guessString)) {
+    //toastr.error("Word not in list!");
+    //return;
+  //}
+  console.log("ITSHERE")
+  var letterColor = ["gray", "gray", "gray"];
 
-  if (!WORDS.includes(guessString)) {
-    toastr.error("Word not in list!");
-    return;
-  }
-
-  var letterColor = ["gray", "gray", "gray", "gray", "gray"];
-
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < LETTERCOUNT; i++) {
     if (rightGuess[i] == currentGuess[i]) {
       letterColor[i] = "green";
       rightGuess[i] = "#";
     }
   }
-
-  for (let i = 0; i < 5; i++) {
+  console.log("ITSHERE")
+  for (let i = 0; i < LETTERCOUNT; i++) {
     if (letterColor[i] == "green") continue;
 
-    for (let j = 0; j < 5; j++) {
+    for (let j = 0; j < LETTERCOUNT; j++) {
       if (rightGuess[j] == currentGuess[i]) {
         letterColor[i] = "yellow";
         rightGuess[j] = "#";
       }
     }
   }
-
-  for (let i = 0; i < 5; i++) {
+  console.log("ITSHERE")
+  for (let i = 0; i < LETTERCOUNT; i++) {
     let box = row.children[i];
     let delay = 250 * i;
     setTimeout(() => {
@@ -99,7 +100,7 @@ function checkGuess() {
       shadeKeyBoard(guessString.charAt(i) + "", letterColor[i]);
     }, delay);
   }
-
+  console.log("ITSHERE")
   if (guessString === rightGuessString) {
     toastr.success("You guessed right! Game over!");
     guessesRemaining = 0;
@@ -115,9 +116,9 @@ function checkGuess() {
     }
   }
 }
-
+console.log("ITSHERE")
 function insertLetter(pressedKey) {
-  if (nextLetter === 5) {
+  if (nextLetter === LETTERCOUNT) {
     return;
   }
   pressedKey = pressedKey.toLowerCase();
@@ -129,6 +130,7 @@ function insertLetter(pressedKey) {
   currentGuess.push(pressedKey);
   nextLetter += 1;
 }
+console.log("ITSHERE")
 document.addEventListener("keyup", (e) => {
   if (guessesRemaining === 0) {
     return;
@@ -152,7 +154,7 @@ document.addEventListener("keyup", (e) => {
     insertLetter(pressedKey);
   }
 });
-
+console.log("ITSHERE")
 document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   const target = e.target;
 
@@ -167,5 +169,5 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
 
   document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
 });
-
+console.log("ITSHERE")
 initBoard();
