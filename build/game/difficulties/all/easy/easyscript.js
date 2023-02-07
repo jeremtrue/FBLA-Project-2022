@@ -67,10 +67,10 @@ function checkGuess() {
     return;
   }
   console.log("ITSHERE")
-  //if (!WORDS.includes(guessString)) {
-    //toastr.error("Word not in list!");
-    //return;
-  //}
+ if (!EASYWORDS.includes(guessString)) {
+    toastr.error("Word not in list!");
+    return;
+  }
   console.log("ITSHERE")
   var letterColor = ["gray", "gray", "gray"];
 
