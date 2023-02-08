@@ -27,5 +27,7 @@ export const EASYWORDS = [
 'dog',
 'bot',
 'tot',
-
+'tin',
+'top',
+'lip',
 ]
