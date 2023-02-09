@@ -30,6 +30,15 @@ h1 {
  .letter-row {
    display: flex;
  }
+ instructg {
+  color: rgb(2, 187, 2);
+}
+instructy {
+  color: rgb(245, 245, 24);
+}
+instructgr {
+  color: rgb(202, 200, 200);
+}
  
  #keyboard-cont {
    margin: 1rem 0;
@@ -58,4 +67,8 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
  }
- 
+ h6 {
+  color: aqua;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
