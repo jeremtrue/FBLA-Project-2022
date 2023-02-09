@@ -1,4 +1,4 @@
-import { WORDS } from "./words";
+import { WORDS } from "./words.js";
 
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
