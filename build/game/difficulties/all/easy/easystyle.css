@@ -49,3 +49,8 @@
     cursor: pointer;
     text-transform: uppercase;
   }
+h1 {
+  text-align: center;
+  color: aliceblue;
+  size: 10pt;
+}
