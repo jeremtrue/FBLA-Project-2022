@@ -1,6 +1,6 @@
 import { EASYWORDS } from "./easywords.js";
 
-const NUMBER_OF_GUESSES = 6;
+const NUMBER_OF_GUESSES = 7;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
@@ -45,7 +45,7 @@ function shadeKeyBoard(letter, color) {
 }
  
 function deleteLetter() {
-  let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
+  let row = document.getElementsByClassName("letter-row")[7 - guessesRemaining];
   let box = row.children[nextLetter - 1];
   box.textContent = "";
   box.classList.remove("filled-box");
@@ -54,7 +54,7 @@ function deleteLetter() {
 }
  
 function checkGuess() {
-  let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
+  let row = document.getElementsByClassName("letter-row")[7 - guessesRemaining];
   let guessString = "";
   let rightGuess = Array.from(rightGuessString);
 
@@ -123,7 +123,7 @@ function insertLetter(pressedKey) {
   }
   pressedKey = pressedKey.toLowerCase();
 
-  let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
+  let row = document.getElementsByClassName("letter-row")[7 - guessesRemaining];
   let box = row.children[nextLetter];
   box.textContent = pressedKey;
   box.classList.add("filled-box");
