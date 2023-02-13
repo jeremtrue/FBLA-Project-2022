@@ -12,5 +12,6 @@ console.log(player4score);
 console.log(player5score);
 
 function submitscore(){
-    
+    let 
 }
+//trying to start a basic submit score script
