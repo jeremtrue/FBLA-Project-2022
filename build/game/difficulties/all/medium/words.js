@@ -2130,6 +2130,7 @@ export const WORDS = [
 'grogs',
 'groin',
 'groks',
+'grogg',
 'gronk',
 'grook',
 'groom',

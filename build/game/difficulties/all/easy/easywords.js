@@ -33,6 +33,7 @@ export const EASYWORDS = [
 'aba',
 'abs',
 'ace',
+'oat',
 'act',
 'add',
 'ado',
