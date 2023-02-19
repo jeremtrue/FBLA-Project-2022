@@ -9,6 +9,16 @@ h1 {
    flex-direction: column;
  }
  
+instructg {
+  color: rgb(2, 187, 2);
+}
+instructy {
+  color: rgb(245, 245, 24);
+}
+instructgr {
+  color: rgb(202, 200, 200);
+}
+
  .letter-box {
    border: 2px solid gray;
    border-radius: 3px;
@@ -22,6 +32,9 @@ h1 {
    align-items: center;
    text-transform: uppercase;
  }
+
+.button1 {background-color: #e27979;}
+.button2 {background-color:rgba(0, 253, 76, 0.904)}
  
  .filled-box {
    border: 2px solid black;
