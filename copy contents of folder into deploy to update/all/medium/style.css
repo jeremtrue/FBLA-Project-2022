@@ -1,3 +1,7 @@
+body {
+  background-image: url(../../pic/background3.png);
+}
+
 h1 {
   text-align: center;
   color: white;
@@ -39,7 +43,9 @@ instructgr {
  .filled-box {
    border: 2px solid black;
  }
- 
+ center {
+  color: aliceblue;
+ }
  .letter-row {
    display: flex;
  }
@@ -59,7 +65,10 @@ instructgr {
    flex-direction: column;
    align-items: center;
  }
- 
+ p1 {
+  color: aliceblue;
+  font-size: 12.5px;
+ }
  #keyboard-cont div {
    display: flex;
  }
@@ -67,7 +76,10 @@ instructgr {
  .second-row {
    margin: 0.5rem 0;
  }
- 
+ p {
+  color:aliceblue;
+  font-size: 17px;
+ }
  .keyboard-button {
    font-size: 1rem;
    font-weight: 700;
@@ -96,4 +108,18 @@ instructgr {
 .hardbutton {
   background-color: teal;
   border-radius: 8px;
+}
+creds {
+  border: 5px solid teal;
+  padding: 8pt;
+  border-radius: 10px;
+  width: 275px;
+  position: absolute; left: 30px;
+  top: 20px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #07dbdbce;
+}
+p2 {
+  color: teal;
 }
