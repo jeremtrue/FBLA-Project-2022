@@ -111,15 +111,19 @@ instructgr {
 }
 creds {
   border: 5px solid teal;
-  padding: 8pt;
+  padding: .75%;
   border-radius: 10px;
   width: 20%;
-  position: absolute; left: 30px;
-  top: 20px;
+  position: absolute; left: 1.5%;
+  top: 1.5%;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   color: #07dbdbce;
 }
 p2 {
   color: teal;
+}
+diff {
+  animation-play-state: running;
+  animation: blink 1000s iteration-count direction cubic-bezier(0.215, 0.610, 0.355, 1);
 }
