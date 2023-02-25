@@ -5,7 +5,7 @@
     </tite>
 </head>
 <body>
-<script src="./leader.js" type="module"></script>
+<script src="./leader.js" type="module" async></script>
 
 <div class="leaderboard">
 
@@ -13,7 +13,8 @@
 
 <label id="user">Name:</label>
 <input type="text" name="user" id="user">
-<button onclick="submit()">Submit</button>
+<!--<button onclick="submit()">Submit</button>-->
+<input type="submit" value="Submit" onclick="submit()">
 
 <br>
 <br>
@@ -26,7 +27,6 @@
 
 function submit() {
 console.log(user);
-document.getElementById(user).innerHTML = 0;
 }
 </script>
 </body>
