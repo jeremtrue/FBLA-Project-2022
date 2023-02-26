@@ -5,14 +5,14 @@
     </tite>
 </head>
 <body>
-<script src="./leader.js" type="module" async></script>
+<script src="./leader.js" type="module"></script>
 
 <div class="leaderboard">
 
 </div>
 
-<label id="user">Name:</label>
-<input type="text" name="user" id="user">
+<label name="textbox">Name:</label>
+<input type="text" name="textbox" id="user">
 <!--<button onclick="submit()">Submit</button>-->
 <input type="submit" value="Submit" onclick="submit()">
 
@@ -21,13 +21,19 @@
 <br>
 <br>
 
-<p id="player1socre"></p>
+<div id="player1" class="player1"></div>
 
 <script>
+var points = document.getElementById("user").nodeValue;
+console.log(points);
+var highScore = localStorage.getItem("player1");
 
 function submit() {
-console.log(user);
-}
+console.log("HELLO");
+console.log(points);
+console.log(document.getElementById('user').innerHTML);
+localStorage.setItem("player1score", points);
+};
 </script>
 </body>
 </html>
