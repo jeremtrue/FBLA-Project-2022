@@ -42,14 +42,14 @@ instructgr {
 .button2 {background-color:rgb(0, 253, 76)}
  
  .filled-box {
-   border: 2px solid rgb(189, 188, 188);
+   border: 2px solid rgba(128, 128, 128, 0.808);
  }
  center {
   color: aliceblue;
  }
  .letter-row {
    display: flex;
-   color: rgb(183, 201, 201);
+   color: rgb(255, 0, 0);
  }
  instructg {
   color: rgb(2, 187, 2);
