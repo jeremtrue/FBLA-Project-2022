@@ -34,7 +34,7 @@ function shadeKeyBoard(letter, color) {
         return;
       }
 
-      if (oldColor === "yellow" && color !== "green") {
+      if (oldColor === "#FF6600" && color !== "green") {
         return;
       }
 
@@ -86,7 +86,7 @@ function checkGuess() {
 
     for (let j = 0; j < LETTERCOUNT; j++) {
       if (rightGuess[j] == currentGuess[i]) {
-        letterColor[i] = "yellow";
+        letterColor[i] = "#FF6600";
         rightGuess[j] = "#";
       }
     }

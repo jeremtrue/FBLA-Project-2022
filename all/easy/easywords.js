@@ -438,7 +438,6 @@ export const EASYWORDS = [
 'sen',
 'set',
 'sew',
-'sex',
 'she',
 'shy',
 'sic',
@@ -529,4 +528,5 @@ export const EASYWORDS = [
 'you',
 'zip',
 'zoo',
+'',
 ]
