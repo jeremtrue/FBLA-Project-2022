@@ -104,9 +104,9 @@ function checkGuess() {
   if (guessString === rightGuessString) {
     toastr.success("You guessed right! Game over!");
     guessesRemaining = 0;
-    toastr.success("Taking you to a winners page!");
-    setTimeout(25000);
-    location.href = '../../index.html';
+    toastr.info("Taking you to a winners page!");
+    //setTimeout("2500000000000000");
+    //location.href = '../../index.html';
     return;
   } else {
     guessesRemaining -= 1;
