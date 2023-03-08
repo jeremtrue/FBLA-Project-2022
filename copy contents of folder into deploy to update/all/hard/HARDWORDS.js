@@ -1,3 +1,4 @@
-export const hardwords = [
+export const HARDWORDS = [
 'because',
+'tuesday',
 ]

@@ -1,11 +1,11 @@
-import { EASYWORDS } from "./easywords.js";
+import { HARDWORDS } from "./hardwords.js";
 
-const NUMBER_OF_GUESSES = 7;
+const NUMBER_OF_GUESSES = 5;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
-let rightGuessString = EASYWORDS[Math.floor(Math.random() * EASYWORDS.length)];
-let LETTERCOUNT = 3;
+let rightGuessString = HARDWORDS[Math.floor(Math.random() * HARDWORDS.length)];
+let LETTERCOUNT = 7;
  
 console.log(rightGuessString);
 
@@ -67,12 +67,12 @@ function checkGuess() {
     return;
   }
    
- if (!EASYWORDS.includes(guessString)) {
+ if (!HARDWORDS.includes(guessString)) {
     toastr.error("Word not in list!");
     return;
   }
    
-  var letterColor = ["gray", "gray", "gray"];
+  var letterColor = ["gray", "gray", "gray", "gray", "gray", "gray", "gray"];
 
   for (let i = 0; i < LETTERCOUNT; i++) {
     if (rightGuess[i] == currentGuess[i]) {
@@ -104,6 +104,9 @@ function checkGuess() {
   if (guessString === rightGuessString) {
     toastr.success("You guessed right! Game over!");
     guessesRemaining = 0;
+    toastr.success("Taking you to a winners page!");
+    setTimeout(25000);
+    location.href = '../../index.html';
     return;
   } else {
     guessesRemaining -= 1;
