@@ -131,7 +131,8 @@ creds {
 p2 {
   color: teal;
 }
-diff {
-  animation-play-state: running;
-  animation: blink 1000s iteration-count direction cubic-bezier(0.215, 0.610, 0.355, 1);
+.fblalogo {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
