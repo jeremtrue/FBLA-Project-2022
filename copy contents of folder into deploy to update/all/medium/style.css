@@ -102,14 +102,20 @@ instructgr {
  .easybutton {
   background-color: aqua;
   border-radius: 8px;
+  width: 10%;
+  height: 50px;
  }
 .mediumbutton {
   background-color: turquoise;
   border-radius: 8px;
+  width: 10%;
+  height: 50px;
 }
 .hardbutton {
   background-color: teal;
   border-radius: 8px;
+  width: 10%;
+  height: 50px;
 }
 creds {
   border: 5px solid teal;

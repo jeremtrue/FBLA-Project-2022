@@ -105,7 +105,6 @@ function checkGuess() {
     toastr.success("You guessed right! Game over!");
     guessesRemaining = 0;
     toastr.info("Taking you to a winners page!");
-    //setTimeout("2500000000000000");
     //location.href = '../../index.html';
     return;
   } else {
