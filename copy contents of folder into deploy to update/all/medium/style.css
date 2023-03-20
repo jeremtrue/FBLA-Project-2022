@@ -5,101 +5,120 @@ body {
 h1 {
   text-align: center;
   color: white;
- }
- 
- #game-board {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   color: lightblue;
- }
- 
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: lightblue;
+}
+
 instructg {
   color: rgb(2, 187, 2);
 }
+
 instructy {
   color: rgb(245, 245, 24);
 }
+
 instructgr {
   color: rgb(202, 200, 200);
 }
 
- .letter-box {
-   border: 2px solid rgba(240, 248, 255, 0.753);
-   border-radius: 3px;
-   margin: 2px;
-   font-size: 2.5rem;
-   font-weight: 700;
-   height: 3rem;
-   width: 3rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-transform: uppercase;
- }
+.letter-box {
+  border: 2px solid rgba(240, 248, 255, 0.753);
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
 
-.button1 {background-color: #e27979;}
-.button2 {background-color:rgb(0, 253, 76)}
- 
- .filled-box {
-   border: 2px solid rgba(128, 128, 128, 0.808);
- }
- center {
+.button1 {
+  background-color: #e27979;
+}
+
+.button2 {
+  background-color: rgb(0, 253, 76)
+}
+
+.filled-box {
+  border: 2px solid rgba(128, 128, 128, 0.808);
+}
+
+center {
   color: aliceblue;
- }
- .letter-row {
-   display: flex;
-   color: lightblue;
- }
- instructg {
+}
+
+.letter-row {
+  display: flex;
+  color: lightblue;
+}
+
+instructg {
   color: rgb(2, 187, 2);
 }
+
 instructy {
   color: #FF6600;
 }
+
 instructgr {
   color: rgb(202, 200, 200);
 }
- 
- #keyboard-cont {
-   margin: 1rem 0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- p1 {
+
+#keyboard-cont {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p1 {
   color: aliceblue;
   font-size: 12.5px;
- }
- #keyboard-cont div {
-   display: flex;
- }
- 
- .second-row {
-   margin: 0.5rem 0;
- }
- p {
-  color:aliceblue;
+}
+
+#keyboard-cont div {
+  display: flex;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+p {
+  color: aliceblue;
   font-size: 17px;
- }
- .keyboard-button {
-   font-size: 1rem;
-   font-weight: 700;
-   padding: .475rem;
-   margin: 1.5px;
-   cursor: pointer;
-   text-transform: uppercase;
- }
- body { 
+}
+
+.keyboard-button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .475rem;
+  margin: 1.5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+body {
   background-repeat: no-repeat;
   background-size: cover;
- }
- h6 {
+}
+
+h6 {
   color: aqua;
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
- }
- .easybutton {
+}
+
+.easybutton {
   background-color: aqua;
   border-radius: 8px;
   width: 10%;
@@ -107,7 +126,8 @@ instructgr {
   font-size: 25px;
   border-color: rgb(174, 211, 243);
 
- }
+}
+
 .mediumbutton {
   background-color: turquoise;
   border-radius: 8px;
@@ -116,6 +136,7 @@ instructgr {
   font-size: 25px;
   border-color: rgb(174, 211, 243);
 }
+
 .hardbutton {
   background-color: teal;
   border-radius: 8px;
@@ -124,20 +145,24 @@ instructgr {
   font-size: 25px;
   border-color: rgb(174, 211, 243);
 }
+
 creds {
   border: 5px solid teal;
   padding: .75%;
   border-radius: 10px;
   width: 20%;
-  position: absolute; left: 1.5%;
+  position: absolute;
+  left: 1.5%;
   top: 1.5%;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   color: #07dbdbce;
 }
+
 p2 {
   color: teal;
 }
+
 .fblalogo {
   position: absolute;
   right: 0px;

@@ -6,7 +6,7 @@ let currentGuess = [];
 let nextLetter = 0;
 let rightGuessString = EASYWORDS[Math.floor(Math.random() * EASYWORDS.length)];
 let LETTERCOUNT = 3;
- 
+
 console.log(rightGuessString);
 
 function initBoard() {
@@ -25,7 +25,7 @@ function initBoard() {
     board.appendChild(row);
   }
 }
- 
+
 function shadeKeyBoard(letter, color) {
   for (const elem of document.getElementsByClassName("keyboard-button")) {
     if (elem.textContent === letter) {
@@ -43,7 +43,7 @@ function shadeKeyBoard(letter, color) {
     }
   }
 }
- 
+
 function deleteLetter() {
   let row = document.getElementsByClassName("letter-row")[7 - guessesRemaining];
   let box = row.children[nextLetter - 1];
@@ -52,7 +52,7 @@ function deleteLetter() {
   currentGuess.pop();
   nextLetter -= 1;
 }
- 
+
 function checkGuess() {
   let row = document.getElementsByClassName("letter-row")[7 - guessesRemaining];
   let guessString = "";
@@ -61,17 +61,17 @@ function checkGuess() {
   for (const val of currentGuess) {
     guessString += val;
   }
-   
-  if (guessString.length != LETTERCOUNT){
+
+  if (guessString.length != LETTERCOUNT) {
     toastr.error("Not enough letters!");
     return;
   }
-   
- if (!EASYWORDS.includes(guessString)) {
+
+  if (!EASYWORDS.includes(guessString)) {
     toastr.error("Word not in list!");
     return;
   }
-   
+
   var letterColor = ["gray", "gray", "gray"];
 
   for (let i = 0; i < LETTERCOUNT; i++) {
@@ -80,7 +80,7 @@ function checkGuess() {
       rightGuess[i] = "#";
     }
   }
-   
+
   for (let i = 0; i < LETTERCOUNT; i++) {
     if (letterColor[i] == "green") continue;
 
@@ -91,7 +91,7 @@ function checkGuess() {
       }
     }
   }
-   
+
   for (let i = 0; i < LETTERCOUNT; i++) {
     let box = row.children[i];
     let delay = 250 * i;
@@ -100,7 +100,7 @@ function checkGuess() {
       shadeKeyBoard(guessString.charAt(i) + "", letterColor[i]);
     }, delay);
   }
-   
+
   if (guessString === rightGuessString) {
     toastr.success("You guessed right! Game over!");
     guessesRemaining = 0;
@@ -116,7 +116,7 @@ function checkGuess() {
     }
   }
 }
- 
+
 function insertLetter(pressedKey) {
   if (nextLetter === LETTERCOUNT) {
     return;
@@ -130,7 +130,7 @@ function insertLetter(pressedKey) {
   currentGuess.push(pressedKey);
   nextLetter += 1;
 }
- 
+
 document.addEventListener("keyup", (e) => {
   if (guessesRemaining === 0) {
     return;
@@ -154,7 +154,7 @@ document.addEventListener("keyup", (e) => {
     insertLetter(pressedKey);
   }
 });
- 
+
 document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   const target = e.target;
 
@@ -169,5 +169,5 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
 
   document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
 });
- 
+
 initBoard();
