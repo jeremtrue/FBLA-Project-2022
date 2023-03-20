@@ -104,6 +104,8 @@ instructgr {
   border-radius: 8px;
   width: 10%;
   height: 50px;
+  font-size: 20px;
+
  }
 .mediumbutton {
   background-color: turquoise;

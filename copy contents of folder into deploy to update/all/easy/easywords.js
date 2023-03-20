@@ -125,7 +125,6 @@ export const EASYWORDS = [
 'cry',
 'cub',
 'cue',
-'cum',
 'cup',
 'cut',
 'dab',
