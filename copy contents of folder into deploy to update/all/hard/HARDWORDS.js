@@ -376,7 +376,6 @@ export const HARDWORDS = [
     'freedom',
     'freeman',
     'freight',
-    'fucking',
     'funeral',
     'furious',
     'further',
@@ -514,7 +513,6 @@ export const HARDWORDS = [
     'license',
     'lighter',
     'lightly',
-    '',
     'limited',
     'lineman',
     'listing',
@@ -1000,5 +998,5 @@ export const HARDWORDS = [
     'worship',
     'writing',
     'written',
-    
+    'tuesday',
 ]

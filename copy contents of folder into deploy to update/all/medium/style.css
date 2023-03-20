@@ -104,7 +104,8 @@ instructgr {
   border-radius: 8px;
   width: 10%;
   height: 50px;
-  font-size: 20px;
+  font-size: 25px;
+  border-color: rgb(174, 211, 243);
 
  }
 .mediumbutton {
@@ -112,12 +113,16 @@ instructgr {
   border-radius: 8px;
   width: 10%;
   height: 50px;
+  font-size: 25px;
+  border-color: rgb(174, 211, 243);
 }
 .hardbutton {
   background-color: teal;
   border-radius: 8px;
   width: 10%;
   height: 50px;
+  font-size: 25px;
+  border-color: rgb(174, 211, 243);
 }
 creds {
   border: 5px solid teal;
