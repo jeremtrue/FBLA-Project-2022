@@ -169,3 +169,12 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
 });
 
 initBoard();
+/*
+<?php
+
+
+
+
+
+?>
+*/
