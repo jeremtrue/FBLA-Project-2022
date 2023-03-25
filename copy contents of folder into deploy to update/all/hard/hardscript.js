@@ -54,7 +54,7 @@ function deleteLetter() {
 }
 
 function checkGuess() {
-  let row = document.getElementsByClassName("letter-row")[8 - guessesRemaining];
+  let row = document.getElementsByClassName("letter-row")[5 - guessesRemaining];
   let guessString = "";
   let rightGuess = Array.from(rightGuessString);
 
