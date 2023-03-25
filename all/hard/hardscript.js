@@ -1,4 +1,4 @@
-import { HARDWORDS } from "./hardwords.js";
+import { HARDWORDS } from "./HARDWORDS.js";
 
 const NUMBER_OF_GUESSES = 5;
 let guessesRemaining = NUMBER_OF_GUESSES;
