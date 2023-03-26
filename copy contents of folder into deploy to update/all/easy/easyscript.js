@@ -1,14 +1,14 @@
 import { EASYWORDS } from "./easywords.js";
-
+//grabs easy word list
 const NUMBER_OF_GUESSES = 8;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
 let rightGuessString = EASYWORDS[Math.floor(Math.random() * EASYWORDS.length)];
 let LETTERCOUNT = 3;
-
+//assigns variable and picks words
 console.log(rightGuessString);
-
+//log right word
 function initBoard() {
   let board = document.getElementById("game-board");
 
@@ -25,7 +25,7 @@ function initBoard() {
     board.appendChild(row);
   }
 }
-
+//appending the board
 function shadeKeyBoard(letter, color) {
   for (const elem of document.getElementsByClassName("keyboard-button")) {
     if (elem.textContent === letter) {
@@ -43,7 +43,7 @@ function shadeKeyBoard(letter, color) {
     }
   }
 }
-
+//shades the boxes
 function deleteLetter() {
   let row = document.getElementsByClassName("letter-row")[8 - guessesRemaining];
   let box = row.children[nextLetter - 1];
@@ -52,7 +52,7 @@ function deleteLetter() {
   currentGuess.pop();
   nextLetter -= 1;
 }
-
+//gives ability to delete
 function checkGuess() {
   let row = document.getElementsByClassName("letter-row")[8 - guessesRemaining];
   let guessString = "";
@@ -116,7 +116,7 @@ function checkGuess() {
     }
   }
 }
-
+//checks the guess
 function insertLetter(pressedKey) {
   if (nextLetter === LETTERCOUNT) {
     return;
@@ -130,7 +130,7 @@ function insertLetter(pressedKey) {
   currentGuess.push(pressedKey);
   nextLetter += 1;
 }
-
+//allows input
 document.addEventListener("keyup", (e) => {
   if (guessesRemaining === 0) {
     return;
@@ -154,7 +154,7 @@ document.addEventListener("keyup", (e) => {
     insertLetter(pressedKey);
   }
 });
-
+//allows keyboard input
 document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   const target = e.target;
 
@@ -166,8 +166,8 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   if (key === "Del") {
     key = "Backspace";
   }
-
+  
   document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
 });
-
+//watches for keyboard button to press
 initBoard();

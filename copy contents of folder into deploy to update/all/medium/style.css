@@ -114,33 +114,32 @@ body {
 
 h6 {
   color: aqua;
-  font-size: 17px;
+  font-size: 21px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .easybutton {
   background-color: aqua;
   border-radius: 8px;
-  width: 10%;
+  width: 15%;
   height: 50px;
   font-size: 150%;
   border-color: rgb(174, 211, 243);
-
 }
 
 .mediumbutton {
   background-color: turquoise;
   border-radius: 8px;
-  width: 10%;
+  width: 15%;
   height: 50px;
-  font-size: 150%;
+  font-size: 130%;
   border-color: rgb(174, 211, 243);
 }
 
 .hardbutton {
   background-color: teal;
   border-radius: 8px;
-  width: 10%;
+  width: 15%;
   height: 50px;
   font-size: 150%;
   border-color: rgb(174, 211, 243);
@@ -165,7 +164,7 @@ p2 {
 
 .fblalogo {
   position: absolute;
-  right: 0%;
-  bottom: 0%;
+  right: -11%;
+  bottom: -4%;
   scale: 35%;
 }
