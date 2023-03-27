@@ -5,13 +5,17 @@
         Leaderboard
     </tite>
 </head>
-    <script src="./leader.js" type="module"></script>
+<script src="./leader.js" type="module"></script>
     <script>
-        console.log();
         var highScore = localStorage.getItem("player1");
         function submit() {
             var user = document.getElementById("user").value;
             console.log(user)
+        }
+        function test() {
+            console.log("test");
+            let temp1 = localStorage.getItem("player1score");
+            console.log(temp1);
         }
         //document.getElementById("player1").innerHTML = highScore;
 
@@ -23,10 +27,9 @@
         //};
     </script>
 <body>
-    <div class="leaderboard">
+    <div id="leaderboard">
 
     </div>
-
     <label name="textbox">Name:</label>
     <input type="text" name="textbox" id="user">
     <!--<button onclick="submit()">Submit</button>-->
@@ -38,6 +41,9 @@
     <br>
 
     <div id="player1" class="player1"></div>
+
+    <button onclick="test()">Test</button>
+
 </body>
 
 </html>
