@@ -1,39 +1,43 @@
 <!DOCTYPE html>
+
 <head>
     <tite>
         Leaderboard
     </tite>
 </head>
+    <script src="./leader.js" type="module"></script>
+    <script>
+        console.log();
+        var highScore = localStorage.getItem("player1");
+        function submit() {
+            var user = document.getElementById("user").value;
+            console.log(user)
+        }
+        //document.getElementById("player1").innerHTML = highScore;
+
+        //function submit() {
+            //console.log("HELLO POINTS");
+            //console.log(points);
+            //console.log(document.getElementById('user')).innerHTML;
+            //localStorage.setItem("player1score", points);
+        //};
+    </script>
 <body>
-<script src="./leader.js" type="module"></script>
+    <div class="leaderboard">
 
-<div class="leaderboard">
+    </div>
 
-</div>
+    <label name="textbox">Name:</label>
+    <input type="text" name="textbox" id="user">
+    <!--<button onclick="submit()">Submit</button>-->
+    <input type="submit" value="Submit" onclick="submit()">
 
-<label name="textbox">Name:</label>
-<input type="text" name="textbox" id="user">
-<!--<button onclick="submit()">Submit</button>-->
-<input type="submit" value="Submit" onclick="submit()">
+    <br>
+    <br>
+    <br>
+    <br>
 
-<br>
-<br>
-<br>
-<br>
-
-<div id="player1" class="player1"></div>
-
-<script>
-var points = document.getElementById("user").nodeValue;
-console.log(points);
-var highScore = localStorage.getItem("player1");
-
-function submit() {
-console.log("HELLO");
-console.log(points);
-console.log(document.getElementById('user').innerHTML);
-localStorage.setItem("player1score", points);
-};
-</script>
+    <div id="player1" class="player1"></div>
 </body>
+
 </html>

@@ -170,4 +170,22 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
 });
 //watches for keyboard button to press
+
+if (guessesRemaining === 0) {
+  toastr.info("IM WORKING BITCH");
+  toastr.info(`The right word was: "${rightGuessString}"`);
+}
+if (guessesRemaining === 8) {
+  console.log("check1");
+}
+  if (guessesRemaining === 7) {
+    console.log("check1");
+  }
+/*  if (pressedKey === "Enter") {
+    console.log("hi");
+  }
+*/
+//im done for now
+//enter key resets game
+//im back
 initBoard();
