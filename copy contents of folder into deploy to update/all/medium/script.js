@@ -168,13 +168,15 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
 });
 
+document.addEventListener("keydown", function(event) {
+  if(event.keyCode === 27){
+     //Esc key was pressed
+     console.log("ESC");
+     window.location.href = "../../index.html";
+     //ESC brings you back to index
+
+ }
+ //PUT ENTER KEY HERE TO RELOAD PAGE (I copy pasted this into every game script just do the same with the enter part)
+});
+
 initBoard();
-/*
-<?php
-
-
-
-
-
-?>
-*/
