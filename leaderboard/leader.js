@@ -1,11 +1,11 @@
 
 //creating cookies to store leaderboard information.
 
-localStorage.setItem("player1score", "1");
-localStorage.setItem("player2score", "");
-localStorage.setItem("player3score", "");
-localStorage.setItem("player4score", "");
-localStorage.setItem("player5score", "");
+//localStorage.setItem("player1score", "1");
+//localStorage.setItem("player2score", "");
+//localStorage.setItem("player3score", "");
+//localStorage.setItem("player4score", "");
+//localStorage.setItem("player5score", "");
 
 //creating player variables
 let p1score = localStorage.getItem("player1score") ;
@@ -21,9 +21,9 @@ function submit() {
 function test() {
     console.log("test");
     let temp1 = localStorage.getItem("player1score");
-    console.log(temp1);
-    temp1 + (1); 
-    localStorage.setItem("player1score", temp1)
+    temp1 = +temp1 +1;
+    console.log(temp1);  
+    localStorage.setItem("player1score", temp1);
 }
 //document.getElementById("player1").innerHTML = highScore;
 
@@ -46,8 +46,12 @@ function test() {
 //https://www.w3schools.com/js/js_output.asp
 //https://www.w3schools.com/html/html_forms.asp
 
+setInterval(function() {
+    document.getElementById("leaderboard").innerHTML = "Player 1:" + localStorage.getItem("player1score");
+}, 10);
 
-document.getElementById("leaderboard").innerHTML += "Player 1:" + p1score;
+
+
 /*document.getElementById("leaderboard").innerHTML += 'Player 1:';
 document.getElementById("leaderboard").innerHTML += 'Player 1:';
 document.getElementById("leaderboard").innerHTML += 'Player 1:';
