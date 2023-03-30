@@ -6,6 +6,7 @@ let currentGuess = [];
 let nextLetter = 0;
 let rightGuessString = EASYWORDS[Math.floor(Math.random() * EASYWORDS.length)];
 let LETTERCOUNT = 3;
+let finalscore = 0;
 //assigns variable and picks words
 console.log(rightGuessString);
 //log right word
@@ -105,6 +106,8 @@ function checkGuess() {
   if (guessString === rightGuessString) {
     toastr.success("You guessed right! Game over!");
     guessesRemaining = 0;
+    finalscore + +100;
+    console.log(finalscore);
     return;
   } else {
     guessesRemaining -= 1;
@@ -186,5 +189,9 @@ document.addEventListener('keydown', function(event) {
   }
 }); 
 //enter key reload the page
+
+localStorage.setItem("easyscore", finalscore)
+
+
 
 initBoard();
