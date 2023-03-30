@@ -181,7 +181,7 @@ document.addEventListener("keydown", function(event) {
  } 
 });
 document.addEventListener('keydown', function(event) {
-  if (event.keyCode === 13 || guessesRemaining === 0) {
+  if (event.keyCode === 13 && guessesRemaining == 0) {
     location.reload();
   }
 }); 

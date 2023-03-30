@@ -529,5 +529,4 @@ export const EASYWORDS = [
     'you',
     'zip',
     'zoo',
-'',
 ]
