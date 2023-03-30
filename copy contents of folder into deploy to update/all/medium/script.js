@@ -179,4 +179,6 @@ document.addEventListener("keydown", function(event) {
  //PUT ENTER KEY HERE TO RELOAD PAGE (I copy pasted this into every game script just do the same with the enter part)
 });
 
+
+
 initBoard();
