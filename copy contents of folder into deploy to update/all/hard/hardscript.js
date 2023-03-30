@@ -178,9 +178,11 @@ document.addEventListener("keydown", function(event) {
      console.log("ESC");
      window.location.href = "../../index.html";
      //ESC brings you back to index
-
  }
- //PUT ENTER KEY HERE TO RELOAD PAGE (I copy pasted this into every game script just do the same with the enter part)
 });
-
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 13 && guessesRemaining == 0) {
+    location.reload();
+  }
+}); 
 initBoard();
