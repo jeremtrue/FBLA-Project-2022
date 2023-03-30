@@ -52,6 +52,7 @@ function deleteLetter() {
   currentGuess.pop();
   nextLetter -= 1;
 }
+
 //gives ability to delete
 function checkGuess() {
   let row = document.getElementsByClassName("letter-row")[8 - guessesRemaining];
@@ -171,20 +172,19 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
 });
 //watches for keyboard button to press
 
-//enter key resets game
-
-
 document.addEventListener("keydown", function(event) {
   if(event.keyCode === 27){
      //Esc key was pressed
      console.log("ESC");
      window.location.href = "../../index.html";
      //ESC brings you back to index
-
- }
- //PUT ENTER KEY HERE TO RELOAD PAGE (I copy pasted this into every game script just do the same with the enter part)
+ } 
 });
-
-
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 13 || guessesRemaining === 0) {
+    location.reload();
+  }
+}); 
+//enter key reload the page
 
 initBoard();
