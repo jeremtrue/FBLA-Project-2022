@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Wordle Leaderboard</title>
-	<link rel="stylesheet" type="text/css" href="./test.css">
-</head>
-<body>
-	<h1>Wordle Leaderboard</h1>
-	<table id="leaderboard">
-		<thead>
-			<tr>
-				<th>Rank</th>
-				<th>Name</th>
-				<th>Score</th>
-			</tr>
-		</thead>
-		<tbody>
-		</tbody>
-	</table>
-
-	<form>
-		<label for="name">Enter your name:</label>
-		<input type="text" id="name" required>
-		<label for="score">Enter your score:</label>
-		<input type="number" id="score" required>
-		<button type="submit" id="submit-btn">Submit</button>
-	</form>
-
-	<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Wordle Leaderboard</title>
+    <link rel="stylesheet" href="./test.css">
+  </head>
+  <body>
+    <h1>Wordle Leaderboard</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="score">Score:</label>
+      <input type="number" id="score" required>
+      <button type="submit">Add to Leaderboard</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard">
+      </tbody>
+    </table>
+  </body>
+  <script src="./test.js"></script>
 </html>

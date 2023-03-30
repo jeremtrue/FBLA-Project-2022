@@ -1,46 +1,12 @@
-h1 {
-	text-align: center;
-	margin-top: 50px;
-}
-
 table {
-	margin: auto;
-	border-collapse: collapse;
+  border-collapse: collapse;
+  width: 100%;
 }
-
 th, td {
-	padding: 10px;
-	border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
-
-thead {
-	background-color: #ccc;
-}
-
-form {
-	margin: 50px auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-label {
-	margin-top: 20px;
-}
-
-input, button {
-	padding: 10px;
-	margin-top: 10px;
-	font-size: 16px;
-}
-
-#submit-btn {
-	background-color: #4CAF50;
-	color: white;
-	border: none;
-	cursor: pointer;
-}
-
-#submit-btn:hover {
-	background-color: #3e8e41;
+th {
+  background-color: #f2f2f2;
 }
