@@ -14,6 +14,7 @@ export const WORDS = [
 'abets',
 'abhor',
 'abide',
+'muggs',
 'abled',
 'abler',
 'abode',

@@ -7,6 +7,8 @@ let nextLetter = 0;
 let rightGuessString = EASYWORDS[Math.floor(Math.random() * EASYWORDS.length)];
 let LETTERCOUNT = 3;
 let finalscore = 0;
+let pointrow = 0;
+let addpoints = 0;
 //assigns variable and picks words
 console.log(rightGuessString);
 //log right word
@@ -37,6 +39,7 @@ function shadeKeyBoard(letter, color) {
 
       if (oldColor === "#FF6600" && color !== "green") {
         return;
+        
       }
 
       elem.style.backgroundColor = color;
@@ -78,6 +81,8 @@ function checkGuess() {
 
   for (let i = 0; i < LETTERCOUNT; i++) {
     if (rightGuess[i] == currentGuess[i]) {
+      finalscore += 25;
+        console.log(finalscore);
       letterColor[i] = "green";
       rightGuess[i] = "#";
     }
@@ -89,6 +94,8 @@ function checkGuess() {
     for (let j = 0; j < LETTERCOUNT; j++) {
       if (rightGuess[j] == currentGuess[i]) {
         letterColor[i] = "#FF6600";
+        finalscore += 10;
+        console.log("10");
         rightGuess[j] = "#";
       }
     }
@@ -105,9 +112,15 @@ function checkGuess() {
 
   if (guessString === rightGuessString) {
     toastr.success("You guessed right! Game over!");
+    pointrow = guessesRemaining;
+    console.log("guessesremaining", guessesRemaining);
+    console.log("pointrow", pointrow);
     guessesRemaining = 0;
-    finalscore + +100;
-    console.log(finalscore);
+    finalscore += 100;
+    console.log("finalscore", finalscore);
+        pointrow -= 1;
+        addpoints += (pointrow * 100);
+        finalscore = finalscore + addpoints;
     return;
   } else {
     guessesRemaining -= 1;
@@ -147,6 +160,7 @@ document.addEventListener("keyup", (e) => {
   }
 
   if (pressedKey === "Enter") {
+    //finalscore -= 10;           //REVIEW 
     checkGuess();
     return;
   }
@@ -179,7 +193,8 @@ document.addEventListener("keydown", function(event) {
   if(event.keyCode === 27){
      //Esc key was pressed
      console.log("ESC");
-     window.location.href = "../../index.html";
+     console.log(finalscore);
+     //window.location.href = "../../index.html";
      //ESC brings you back to index
  } 
 });
@@ -190,8 +205,7 @@ document.addEventListener('keydown', function(event) {
 }); 
 //enter key reload the page
 
+
 localStorage.setItem("easyscore", finalscore)
-
-
-
+console.log(finalscore);
 initBoard();
