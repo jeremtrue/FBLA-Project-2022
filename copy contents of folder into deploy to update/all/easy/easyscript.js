@@ -112,12 +112,12 @@ function checkGuess() {
 
   if (guessString === rightGuessString) {
     toastr.success("You guessed right! Game over!");
-    pointrow = guessesRemaining;
-    console.log("guessesremaining", guessesRemaining);
-    console.log("pointrow", pointrow);
-    guessesRemaining = 0;
-    finalscore += 100;
-    console.log("finalscore", finalscore);
+        pointrow = guessesRemaining;
+        console.log("guessesremaining", guessesRemaining);
+        console.log("pointrow", pointrow);
+        guessesRemaining = 0;
+        finalscore += 100;
+        console.log("finalscore", finalscore);
         pointrow -= 1;
         addpoints += (pointrow * 100);
         finalscore = finalscore + addpoints;
