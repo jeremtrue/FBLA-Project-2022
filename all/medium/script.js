@@ -168,13 +168,19 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
   document.dispatchEvent(new KeyboardEvent("keyup", { key: key }));
 });
 
+document.addEventListener("keydown", function(event) {
+  if(event.keyCode === 27){
+     //Esc key was pressed
+     console.log("ESC");
+     window.location.href = "../../index.html";
+     //ESC brings you back to index
+ }
+});
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 13 && guessesRemaining == 0) {
+    location.reload();
+  }
+}); 
+
+
 initBoard();
-/*
-<?php
-
-
-
-
-
-?>
-*/

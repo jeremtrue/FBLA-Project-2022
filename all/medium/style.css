@@ -114,49 +114,35 @@ body {
 
 h6 {
   color: aqua;
-  font-size: 17px;
+  font-size: 21px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .easybutton {
   background-color: aqua;
   border-radius: 8px;
-  width: 10%;
-  height: 50px;
+  width: 17%;
+  height: 53px;
   font-size: 150%;
   border-color: rgb(174, 211, 243);
-
 }
 
 .mediumbutton {
   background-color: turquoise;
   border-radius: 8px;
-  width: 10%;
-  height: 50px;
-  font-size: 150%;
+  width: 17%;
+  height: 53px;
+  font-size: 130%;
   border-color: rgb(174, 211, 243);
 }
 
 .hardbutton {
-  background-color: teal;
+  background-color: rgb(2, 175, 175);
   border-radius: 8px;
-  width: 10%;
-  height: 50px;
+  width: 17%;
+  height: 53px;
   font-size: 150%;
   border-color: rgb(174, 211, 243);
-}
-
-creds {
-  border: 5px solid teal;
-  padding: .75%;
-  border-radius: 10px;
-  width: 20%;
-  position: absolute;
-  left: 1.5%;
-  top: 1.5%;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #07dbdbce;
 }
 
 p2 {
@@ -165,7 +151,86 @@ p2 {
 
 .fblalogo {
   position: absolute;
-  right: 0%;
+  right: -5%;
   bottom: 0%;
-  scale: 35%;
+  scale: 40%;
+}
+
+.topbar {
+  margin: 0;
+  color: lightblue;
+  background-color: #FF6600;
+}
+
+.howto {
+  position: absolute;
+  border: 3px solid #23466d;
+  border-radius: 20px;
+  padding: 1px;
+  height: auto;
+  max-width: 30%;
+  top: 5px;
+  top: 1.5%;
+  background-color: rgba(211, 211, 211, 0.493);
+}
+
+creds {
+  border: 5px solid teal;
+  padding: .75%;
+  border-radius: 10px;
+  height: 50%;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  max-width: 30%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background-color: rgba(211, 211, 211, 0.493);
+}
+select {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: rgb(4, 111, 111);;
+}
+table {
+  color: rgb(213, 182, 3);
+  font-weight: bold;
+}
+td {
+  background-color: rgb(59, 137, 137);
+}
+form {
+  color: lightsalmon;
+}
+#score, #name {
+  background-color: #fffcf2;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+points {
+  border: 5px solid teal;
+  padding: .75%;
+  border-radius: 10px;
+  height: 25%;
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
+  max-width: 30%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background-color: rgba(211, 211, 211, 0.493);
 }
