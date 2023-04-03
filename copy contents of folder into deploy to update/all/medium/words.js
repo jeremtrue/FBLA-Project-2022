@@ -10,6 +10,7 @@ export const WORDS = [
 'abbey',
 'abbot',
 'abeam',
+'india',
 'abend',
 'abets',
 'abhor',
