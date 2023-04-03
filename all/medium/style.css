@@ -121,27 +121,27 @@ h6 {
 .easybutton {
   background-color: aqua;
   border-radius: 8px;
-  width: 17%;
-  height: 53px;
-  font-size: 150%;
+  width: 19%;
+  height: 60px;
+  font-size: 180%;
   border-color: rgb(174, 211, 243);
 }
 
 .mediumbutton {
   background-color: turquoise;
   border-radius: 8px;
-  width: 17%;
-  height: 53px;
-  font-size: 130%;
-  border-color: rgb(174, 211, 243);
+  width: 19%;
+  height: 60px;
+  font-size: 180%;
+  border-color: rgb(74, 211, 243);
 }
 
 .hardbutton {
   background-color: rgb(2, 175, 175);
   border-radius: 8px;
-  width: 17%;
-  height: 53px;
-  font-size: 150%;
+  width: 19%;
+  height: 60px;
+  font-size: 180%;
   border-color: rgb(174, 211, 243);
 }
 
@@ -169,8 +169,8 @@ p2 {
   padding: 1px;
   height: auto;
   max-width: 30%;
-  top: 5px;
-  top: 1.5%;
+  top: 8%;
+  left: 3%;
   background-color: rgba(211, 211, 211, 0.493);
 }
 
@@ -181,7 +181,7 @@ creds {
   height: 50%;
   position: absolute;
   right: 3%;
-  top: 5%;
+  top: 10%;
   max-width: 30%;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
