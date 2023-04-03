@@ -121,6 +121,25 @@ function checkGuess() {
         pointrow -= 1;
         addpoints += (pointrow * 100);
         finalscore = finalscore + addpoints;
+        const name = prompt('Enter your name');
+        console.log(name);
+const playerName = name;
+const playerScore = finalscore;
+
+// Step 1: Get the current leaderboard data from localStorage
+const leaderboardData = localStorage.getItem('leaderboard');
+
+// Step 2: Parse the leaderboard data into an array
+const leaderboard = leaderboardData ? JSON.parse(leaderboardData) : [];
+
+// Step 3: Push the new entry to the leaderboard array
+leaderboard.push({ name: playerName, score: playerScore });
+
+// Step 4: Sort the leaderboard array in descending order based on the score
+leaderboard.sort((a, b) => b.score - a.score);
+
+// Step 5: Save the sorted leaderboard array back to localStorage
+localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
     return;
   } else {
     guessesRemaining -= 1;

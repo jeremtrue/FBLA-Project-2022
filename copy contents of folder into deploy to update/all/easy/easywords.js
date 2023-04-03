@@ -10,6 +10,7 @@ export const EASYWORDS = [
     'age',
     'ago',
     'aid',
+    'mow',
     'aim',
     'air',
     'ala',
