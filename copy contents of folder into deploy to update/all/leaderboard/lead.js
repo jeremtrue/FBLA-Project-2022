@@ -58,3 +58,10 @@ const form = document.querySelector('form');
 
       // add event listener for form submission
       form.addEventListener('submit', handleSubmit);
+      document.addEventListener("keydown", function(event) {
+        if(event.keyCode === 27){
+           //Esc key was pressed
+           console.log("ESC");
+           window.location.href = "../../index.html";
+       } 
+      });
