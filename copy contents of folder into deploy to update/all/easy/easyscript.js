@@ -216,7 +216,7 @@ document.addEventListener("keydown", function(event) {
      //Esc key was pressed
      console.log("ESC");
      console.log(finalscore);
-     //window.location.href = "../../index.html";
+     window.location.href = "../../index.html";
      //ESC brings you back to index
  } 
 });

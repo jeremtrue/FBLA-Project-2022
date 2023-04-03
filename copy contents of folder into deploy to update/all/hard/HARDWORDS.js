@@ -11,6 +11,7 @@ export const HARDWORDS = [
     'address',
     'admiral',
     'advance',
+    'parents',
     'adverse',
     'advised',
     'adviser',
