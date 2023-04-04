@@ -57,7 +57,7 @@ const form = document.querySelector('form');
       updateLeaderboard();
 
       // add event listener for form submission
-      form.addEventListener('submit', handleSubmit);
+      //form.addEventListener('submit', handleSubmit);
       document.addEventListener("keydown", function(event) {
         if(event.keyCode === 27){
            //Esc key was pressed
